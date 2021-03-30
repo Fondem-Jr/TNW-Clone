@@ -8,11 +8,27 @@
   src: url(../fonts/Shentox.ttf);
 }
 
+@font-face {
+  font-family: "Liberation Sans";
+  src: url(../fonts/LiberationSans-Regular.ttf)
+    url(../fonts/LiberationSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: Avalon;
+  src: url(../fonts/Avalon_Regular.ttf) url(../fonts/Avalon_Bold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+}
+
+body {
+  max-width: 575px;
+  margin: 0 auto;
 }
 
 header a {
@@ -176,6 +192,92 @@ header a {
   height: 3em;
   vertical-align: middle;
   padding-top: 1em;
-  font-family: ;
+  font-family: "Liberation Sans", sans-serif;
+}
 
+.highlights,
+.highlight {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: Avalon, sans-serif;
+  color: white;
+  margin: 0.15em;
+  padding: 0.5em;
+}
+
+.highlight .clickme {
+  order: -1;
+  width: 100%;
+  height: 70%;
+}
+
+.highlight h1,
+.highlight .clickme:hover {
+  cursor: pointer;
+}
+
+.highlight h1 {
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: -0.05rem;
+}
+
+.highlight a,
+.highlight .author {
+  text-decoration: none;
+  font-family: "Liberation Sans";
+  color: #6e6e6e;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.5em;
+  padding-left: 0;
+}
+
+.highlight1 {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 1)
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Opal-796x417.jpg)
+      no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.highlight1 img,
+.highlight-date {
+  display: none;
+}
+
+.highlight2 {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 1)
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Untitled-design-2021-01-26T112752.972-796x417.png)
+      no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.highlight3 {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 1)
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Gemini2-duplicates-monitor-alert-e1611566958933-796x420.png)
+      no-repeat;
+  background-size: cover;
+  background-position: center;
 }
