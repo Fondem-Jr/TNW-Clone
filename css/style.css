@@ -19,16 +19,17 @@
   src: url(../fonts/Avalon_Regular.ttf) url(../fonts/Avalon_Bold.ttf);
 }
 
+@font-face {
+  font-family: "ARS Marquette";
+  src: url(../fonts/ARSMaquettePro-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-}
-
-body {
-  max-width: 575px;
-  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header a {
@@ -101,14 +102,6 @@ header a {
   padding-left: 1em;
   border-left: 1px solid rgba(110, 110, 110, 0.5);
   padding-top: 1em;
-}
-
-.redish {
-  background-color: #ff4422;
-}
-
-.pink {
-  background-color: #fffaf8;
 }
 
 @media (min-width: 768px) {
@@ -282,13 +275,14 @@ header a {
 }
 
 .latest-news {
- margin-top: 10em;
+  margin-top: 10em;
 }
 
 .latest-news h2 {
   color: #f42;
-   font-family: Avalon, sans-serif;
-   letter-spacing: -0.15rem;
+  padding-left: 0.5em;
+  font-family: Avalon, sans-serif;
+  letter-spacing: -0.05rem;
 }
 
 article {
@@ -300,7 +294,9 @@ article a img {
 }
 
 .flex-item1 {
- padding: 1em;
+  margin: 1em;
+  width: 100px;
+  height: 75px;
 }
 
 .flex-item2 {
@@ -316,7 +312,7 @@ article a img {
 }
 
 .flex-item2 h3 {
- font-size: 1em;
+  font-size: 1em;
 }
 
 .flex-item2 p {
@@ -331,4 +327,182 @@ article a img {
 
 .flex-item2 p a:hover {
   color: #555;
+}
+
+.latest-news-img1 {
+  background: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/california-car-ev-hydrogen-future-electruc-fcev-ev-480x270.png);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.latest-news-img2 {
+  background: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/header-image-bernie-sitting-meme-analysis-516x270.png);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.latest-news-img3 {
+  background: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/1-copy-52-516x270.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.latest-news-img4 {
+  background: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/zoom-fundraising-gq-516x270.png);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.latest-news-img5 {
+  background: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/biggst-ev-motor-electric-car-future-diesel-factory-production-future-PSA-world-480x270.png);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.latest-news-img6 {
+  background: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/1-copy-51-516x270.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.latest-news-img7 {
+  background: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/biden-electric-cars-future-us-state-vehicles-car-EV-480x270.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.latest-news-img8 {
+  background: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Signal-hed-513x270.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+section.lastest-funding {
+  margin-top: 10em;
+}
+
+.lastest-funding-left {
+  color: #f42;
+  padding: 1em;
+  font-family: Avalon, sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.lastest-funding-left:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.lastest-funding-right li {
+  list-style: none;
+  padding: 0.4em 1em;
+}
+
+.lastest-funding-right a {
+  text-decoration: none;
+  font-family: "ARS Marquette", sans-serif;
+  font-size: 0.85rem;
+  color: #f42;
+}
+
+.separator {
+  display: none;
+}
+
+.lastest-funding-right a:hover {
+  color: black;
+}
+
+div.funding {
+  position: relative;
+  margin: 1em;
+}
+
+div.funding img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+}
+
+.redish {
+  background-color: #f42;
+  width: 100%;
+  height: 3em;
+}
+
+.redish:hover {
+  cursor: pointer;
+}
+
+.redish h4 {
+  color: white;
+  padding: 0.75em 5em;
+  font-size: 1.2em;
+}
+
+.pink {
+  background: rgba(255, 68, 34, 0.08);
+  width: 100%;
+  height: 4em;
+  padding: 0.75em 6em;
+}
+
+.pink:hover {
+  cursor: pointer;
+}
+
+.pink .money {
+  font-weight: 900;
+}
+
+.funding-icons {
+  height: 5.5em;
+  padding: 0.75em 1em;
+  border-bottom: 1px solid rgba(255, 68, 34, 0.4);
+}
+
+.funding-icons i {
+  padding: 0.5em;
+  color: black;
+}
+
+.funding-icons p {
+  color: #6e6e6e;
+}
+
+.funding-icons:hover {
+  cursor: pointer;
+}
+
+.funding-icons p:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.funding-content {
+  padding: 1.2em;
+}
+
+.funding-content p {
+  color: #6e6e6e;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.funding-content span {
+  padding-left: 0.2em;
+  color: #9e9e9e;
+}
+
+.hidden {
+  display: none;
 }
