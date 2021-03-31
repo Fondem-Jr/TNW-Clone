@@ -49,6 +49,14 @@
   font-family: Avalon, Arial, Helvetica, sans-serif;
 }
 
+.latest-news,
+.lastest-funding,
+main,
+.latest-deals {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -105,7 +113,7 @@ header a {
   color: black;
 }
 
-.nav-manu1 a {
+.nav-menu1 a {
   color: hsla(0, 0%, 100%, 0.6);
 }
 
@@ -1090,5 +1098,136 @@ footer {
 
   .highlight h2 {
     font-size: 1.2rem;
+  }
+
+  .separator {
+    display: block;
+    color: #f42;
+  }
+
+  .lastest-funding-right ul {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .lastest-funding-right li {
+    list-style: none;
+    padding: 0;
+    padding-left: 1rem;
+  }
+
+  .lastest-funding-right a {
+    text-decoration: none;
+    font-family: "ARS Marquette", sans-serif;
+    font-size: 1rem;
+    color: #f42;
+  }
+
+  .lastest-funding-botton {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  div.funding {
+    margin: 0.5em;
+    width: 33%;
+  }
+
+  .lastest-funding-botton {
+    width: 100%;
+  }
+
+  .redish,
+  .pink {
+    width: auto;
+  }
+
+  .funding p.series {
+    color: #555;
+    font-size: 0.65rem;
+  }
+
+  .redish h4 {
+    padding: 0.75em 4.5em;
+  }
+
+  .pink {
+    padding: 0.75em 5.5em;
+  }
+
+  .funding-icons p {
+    font-size: 0.75rem;
+  }
+
+  .funding-icons i {
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tnw-menu {
+    display: none;
+  }
+
+  .nav-menu1 {
+    align-items: center;
+  }
+
+  .nav-menu1-right {
+    margin-right: -8em;
+  }
+
+  .nav-menu2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .yellow-p {
+    text-align: left;
+    padding-left: 1em;
+  }
+
+  .highlight1 {
+    position: relative;
+  }
+
+  .highlight1 img,
+  .highlight-date {
+    display: block;
+  }
+
+  .highlight1 img {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 50%;
+  }
+
+  .highlight1 p.highlight-date {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+
+  .highlight1 {
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Opal-796x417.jpg)
+        no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .lastest-funding-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1em;
+  }
+
+  .lastest-funding-botton .hidden {
+    display: block;
   }
 }
