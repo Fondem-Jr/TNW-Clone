@@ -53,14 +53,13 @@ header {
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 2;
+  z-index: 3;
 }
 
 header .menus {
   display: flex;
   justify-content: space-between;
   transition: 0.5s;
-  position: static;
 }
 
 header a {
@@ -983,8 +982,28 @@ footer {
     display: none;
   }
 
-  .nav-menu2 {
-    padding-right: 0;
+  header .menus {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-menu1 {
+    height: 2.8em;
+  }
+
+  .nav-menu1 .menu1-left-right {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 106px);
+    position: relative;
+  }
+
+  .tnw-menu {
+    height: 80px;
+    float: left;
+    z-index: 5;
+    background-color: black;
+    padding-top: 1.5em;
   }
 
   .yellow-p {
@@ -992,17 +1011,29 @@ footer {
     padding-top: 0.4em;
   }
 
+  .nav-menu1-left,
+  .nav-menu1-right,
   .nav-menu2-left {
     display: block;
+    padding-left: 1em;
+  }
+
+  .nav-menu2-left {
     font-family: Shentox;
     font-weight: 400;
     font-size: 0.75rem;
   }
 
   .nav-menu2 {
-    display: flex;
-    justify-content: space-between;
+    padding-right: 0;
+    position: -webkit-sticky;
     width: calc(100% - 106px);
+    margin-left: 106px;
+    padding-left: 0;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 2;
   }
 
   .nav-menu2-left li {
