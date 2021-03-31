@@ -982,6 +982,41 @@ footer {
   .bars {
     display: none;
   }
+
+  .nav-menu2 {
+    padding-right: 0;
+  }
+
+  .yellow-p {
+    height: 2em;
+    padding-top: 0.4em;
+  }
+
+  .nav-menu2-left {
+    display: block;
+    font-family: Shentox;
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+
+  .nav-menu2 {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 106px);
+  }
+
+  .nav-menu2-left li {
+    padding-right: 1em;
+  }
+
+  .nav-menu2-left-hidden {
+    display: none;
+  }
+
+  .lower-footer p {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .bars {
