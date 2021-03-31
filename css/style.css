@@ -500,6 +500,11 @@ div.funding img {
   cursor: pointer;
 }
 
+.funding-content a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .funding-content span {
   padding-left: 0.2em;
   color: #9e9e9e;
