@@ -1309,6 +1309,18 @@ footer {
     background-position: center;
   }
 
+  .latest-news-flex-container article {
+    width: 23%;
+    margin: 0.5em;
+  }
+
+  .flex-item2 h3 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  
+
   .lastest-funding-top {
     display: flex;
     justify-content: space-between;
@@ -1319,4 +1331,23 @@ footer {
   .lastest-funding-botton .hidden {
     display: block;
   }
+
+   main article {
+    width: 30%;
+  }
+
+  .most-popular {
+    height: 230px;
+  }
+
+   .latest-deals-bottom {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .latest-deals-offer div {
+    width: 22vw;
+    height: calc(22vw / 1.85);
+  }
+
 }
