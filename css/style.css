@@ -874,3 +874,106 @@ main li a:hover {
   text-decoration: line-through;
   font-size: 0.65rem;
 }
+
+footer {
+  color: #9e9e9e;
+}
+
+.upper-footer {
+  background-color: #131313;
+}
+
+.media-icons,
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.media-icons div {
+  text-align: center;
+  border-radius: 50%;
+  margin: 2em 0.25em;
+  background-color: #333;
+  color: white;
+}
+
+.media-icons div:hover {
+  background-color: black;
+  border: 1pix solid white;
+  cursor: pointer;
+}
+
+.media-icons .icon-fb {
+  padding: 0.55em 0.8em;
+}
+
+.media-icons .icon-tt {
+  padding: 0.5em 0.7em;
+}
+
+.media-icons .icon-yt {
+  padding: 0.5em 0.65em;
+}
+
+.media-icons .icon-ig {
+  padding: 0.5em 0.75em;
+}
+
+.media-icons .icon-pr {
+  padding: 0.5em 0.85em;
+}
+
+.media-icons .icon-wf {
+  padding: 0.5em 0.6em;
+}
+
+.media-icons .icon-email {
+  padding: 0.55em 0.75em;
+}
+
+.lower-footer {
+  background-color: black;
+}
+
+.footer-nav {
+  font-family: Shentox;
+  font-size: 0.65rem;
+}
+
+.footer-nav li {
+  padding: 0.75em;
+  margin-bottom: 3em;
+}
+
+.footer-nav li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.lower-footer {
+  font-family: "Liberation Sans";
+  font-size: 0.75rem;
+  padding: 2.5em;
+}
+
+.lower-footer img {
+  height: 9px;
+}
+
+.lower-footer img:hover,
+.lower-footer span span:hover {
+  cursor: pointer;
+}
+
+.lower-footer p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lower-footer span span {
+  font-weight: bold;
+  color: white;
+}
