@@ -1221,16 +1221,36 @@ footer {
     grid-template-rows: repeat(3, 1fr);
   }
 
+  .latest-deals-offer {
+    position: relative;
+  }
+
   .triangle-yellow {
-    width: 0;
-    height: 0;
-    border-top: 100px solid #fc0;
-    border-left: 100px solid transparent;
+    width: 100%;
+    height: 100%;
+    background-color: #fc0;
+    clip-path: polygon(71% 0%, 100% 50%, 100% 0);
+    position: relative;
+  }
+
+  .latest-deals-offer div p {
+    display: block;
+  }
+
+  .discount {
+    position: absolute;
+    top: 12%;
+    right: calc(12% / 1.85);
+    color: black;
+    rotate: 45deg;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: calc(1vw * 0.01);
   }
 
   .latest-deals-offer div {
-    width: 325px;
-    height: 175px;
+    width: 30vw;
+    height: calc(30vw / 1.85);
     clear: left;
     margin-right: 1em;
   }
