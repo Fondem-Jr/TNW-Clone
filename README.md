@@ -21,7 +21,7 @@ This week's project technical skills are:
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://fondem-jr.github.io/TNW-Clone/)
 
 ## Authors
 
