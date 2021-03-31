@@ -183,6 +183,10 @@ header a {
   cursor: pointer;
 }
 
+.highlights {
+  padding-top: 8em;
+}
+
 .highlights,
 .highlight {
   display: flex;
@@ -198,7 +202,6 @@ header a {
   font-family: Avalon, sans-serif;
   color: white;
   margin: 0.15em;
-  margin-top: 8em;
   padding: 0.5em;
 }
 
@@ -213,7 +216,8 @@ header a {
   cursor: pointer;
 }
 
-.highlight h1 {
+.highlight h1,
+.highlight h2 {
   font-size: 1em;
   font-weight: bold;
   letter-spacing: -0.05rem;
@@ -977,6 +981,12 @@ footer {
   font-weight: bold;
   color: white;
 }
+
+.bars {
+  padding-bottom: 1em;
+  border-left: 1px solid rgba(110, 110, 110, 0.5);
+}
+
 @media screen and (min-width: 768px) {
   .bars {
     display: none;
@@ -1048,9 +1058,37 @@ footer {
     flex-direction: row;
     justify-content: center;
   }
-}
 
-.bars {
-  padding-bottom: 1em;
-  border-left: 1px solid rgba(110, 110, 110, 0.5);
+  .highlights {
+    padding-top: 7em;
+    display: grid;
+    grid-template:
+      "highlight1     highlight2" 200px
+      "highlight1     highlight3" 200px
+      / 2fr 1fr;
+    gap: 0.65em;
+  }
+
+  .highlight1 {
+    grid-area: highlight1;
+    height: calc(400px + 0.65em);
+  }
+
+  .highlight2 {
+    grid-area: highlight2;
+  }
+
+  .highlight3 {
+    grid-area: highlight3;
+  }
+
+  .highlight h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.1em;
+  }
+
+  .highlight h2 {
+    font-size: 1.2rem;
+  }
 }
