@@ -50,8 +50,17 @@
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+}
+
+header .menus {
   display: flex;
   justify-content: space-between;
+  transition: 0.5s;
+  position: static;
 }
 
 header a {
@@ -169,6 +178,7 @@ header a {
   padding-top: 1.8em;
   font-family: "Liberation Sans", sans-serif;
   font-size: 0.85rem;
+  position: static;
 }
 
 .yellow-p:hover {
@@ -190,6 +200,7 @@ header a {
   font-family: Avalon, sans-serif;
   color: white;
   margin: 0.15em;
+  margin-top: 8em;
   padding: 0.5em;
 }
 
