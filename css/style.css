@@ -166,7 +166,6 @@ header a {
   height: 100%;
   color: #ff4422;
   padding-left: 1em;
-  border-left: 1px solid rgba(110, 110, 110, 0.5);
   padding-top: 1em;
 }
 
@@ -978,4 +977,14 @@ footer {
 .lower-footer span span {
   font-weight: bold;
   color: white;
+}
+@media screen and (min-width: 768px) {
+  .bars {
+    display: none;
+  }
+}
+
+.bars {
+  padding-bottom: 1em;
+  border-left: 1px solid rgba(110, 110, 110, 0.5);
 }
