@@ -6,17 +6,19 @@
 @font-face {
   font-family: Shentox;
   src: url(../fonts/Shentox.ttf);
+  src: url(../fonts/Shentox\ Bold.ttf);
+  src: url(../fonts/Shentox\ SemiBold.ttf);
 }
 
 @font-face {
   font-family: "Liberation Sans";
-  src: url(../fonts/LiberationSans-Regular.ttf)
-    url(../fonts/LiberationSans-Bold.ttf);
+  src: url(../fonts/LiberationSans-Regular.ttf);
 }
 
 @font-face {
   font-family: Avalon;
-  src: url(../fonts/Avalon_Regular.ttf) url(../fonts/Avalon_Bold.ttf);
+  src: url(../fonts/Avalon_Regular.ttf);
+  src: url(../fonts/Avalon_Bold.ttf);
 }
 
 @font-face {
@@ -29,7 +31,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Avalon, Arial, Helvetica, sans-serif;
 }
 
 header a {
@@ -507,13 +509,77 @@ div.funding img {
   display: none;
 }
 
+main {
+  margin-top: 3em;
+}
+
 main h2 {
   color: #f42;
+  font-family: Avalon, sans-serif;
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+main h2 span:hover {
+  color: black;
+  cursor: pointer;
 }
 
 main article {
   display: flex;
   flex-direction: column;
+  margin: 1em;
+}
+
+.most-popular {
+  width: 100%;
+  height: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1em;
+}
+
+.most-popular:hover {
+  cursor: pointer;
+}
+
+.most-popular .dont-clickme {
+  background-color: red;
+}
+
+.most-popular h3 {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.most-popular h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.most-popular p {
+  font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
+  color: #9e9e9e;
+  font-size: 0.65rem;
+}
+
+.most-popular p a {
+  text-decoration: none;
+  color: #9e9e9e;
+}
+
+.most-popular p a:hover {
+  color: white;
+}
+
+.most-popular .tag {
+  font-family: Shentox, Arial, Helvetica, sans-serif;
+  font-size: 0.85em;
+  color: white;
+  order: -1;
 }
 
 .most-popular1 {
@@ -622,4 +688,189 @@ main article {
       no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.latest {
+  background-color: rgba(255, 68, 34, 0.08);
+  color: #f42;
+  margin-top: 1px;
+}
+
+.latest img {
+  width: 96px;
+  height: 96px;
+  float: right;
+}
+
+.latest .tag {
+  font-family: Shentox, Arial, Helvetica, sans-serif;
+  font-size: 0.85em;
+  padding: 1em;
+  padding-bottom: 0.5em;
+}
+
+.latest h4 {
+  padding: 1em;
+  padding-top: 0;
+  font-family: "ARS Marquette", Arial, Helvetica, sans-serif;
+}
+
+.latest h4:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+main ul {
+  padding: 1em;
+}
+
+main li {
+  list-style: disc;
+  font-size: 0.85em;
+  padding: 1em;
+  color: #f42;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.4);
+}
+
+main li a {
+  font-family: "Liberation Sans";
+  font-size: 1em;
+  color: #555;
+  text-decoration: none;
+}
+
+main li a:hover {
+  color: black;
+}
+
+.latest-deals {
+  padding: 1em;
+  margin-bottom: 10em;
+}
+
+.latest-deals-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latest-deals-top h2 {
+  color: #f42;
+  font-family: Avalon, sans-serif;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.latest-deals-top h2:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.latest-deals-top a {
+  text-decoration: none;
+  color: #f42;
+}
+
+.latest-deals-top a:hover {
+  color: black;
+}
+
+.latest-deals-offer {
+  clear: left;
+  margin-bottom: 3.25em;
+}
+
+.latest-deals-offer div {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin-right: 1em;
+}
+
+.latest-deals-offer div:hover {
+  cursor: pointer;
+}
+
+.latest-deals-offer div p {
+  display: none;
+}
+
+.offer-image1 {
+  background-image: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp2.stackassets.com/7a5a98dff30d5c38ecbc1700812eb2e1b93dce93/store/4b1f63289bd195a7bbafafbe36579fe597a5f1e7a0cb8165012908f3db74/sale_28088_primary_image.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-image2 {
+  background-image: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/1ce9b5e7afdcdd63a87d67d709a87ff735114cdd/store/3d847ed1b1c50758b3e478d2bbadfa527516bf72fa57658c5e8f7ffcc3f9/sale_162647_primary_image.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-image3 {
+  background-image: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp0.stackassets.com/c1fc5b0d89d9fb684e2ded4df2d6fbcbc3bf5bee/store/2a25d86229518c8634d2dae006e7aa58e735e292002cd2aabc0b17513a54/sale_24707_primary_image.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-image4 {
+  background-image: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/b34f2af9e9ec3122eb0c0b252532b61f8a08c0ea/store/243275a3bf8c7d20203d2e6e3b9f3664926f9f8913e755d1ae8811aecd9b/sale_25748_primary_image.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-image5 {
+  background-image: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/549384f77e88448bc914df09683a756f0c5e4c57/store/70bd980cd752af445b083eb46b1db2fb3fcee3c55eddbade2cae4193f5c5/sale_162254_primary_image.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-image6 {
+  background-image: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp3.stackassets.com/131a74f7d56643b61ee30fb3e8da705c53031bed/store/b32bf58c9865347773f96c04f56c69f07227e61baeb48f8ffffec4861e5e/sale_18296_primary_image.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-image7 {
+  background-image: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp2.stackassets.com/dd2a99b3f7d21cd700c3d210798ff74322c011d5/store/f4313846701bed0b9cbd6b0a983722fdce21faef621975d07c3a90a79e55/sale_148067_primary_image.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-image8 {
+  background-image: url(https://wr.perma-archives.org/public/m5zv-q2d6/20210126152647mp_/https://cdnp1.stackassets.com/78d21e7906585957a1c4878636e0265d8bc3dffe/store/b39642357ca106ff7341d682ee27edcec23cbb3b7c2e9ddc690bb89533f1/sale_162717_primary_image.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.latest-deals-offer {
+  font-family: "Liberation Sans";
+}
+
+.latest-deals-offer h3 {
+  font-size: 0.85rem;
+}
+
+.latest-deals-offer h3:hover {
+  color: #f42;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.latest-deals-offer p {
+  font-size: 0.75rem;
+  color: #6e6e6e;
+}
+
+.latest-deals-offer span {
+  text-decoration: line-through;
+  font-size: 0.65rem;
 }
