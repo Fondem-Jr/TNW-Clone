@@ -4,7 +4,9 @@
 
 > This is week two project for Microverse software development programme.
 
-![screenshot](./app_screenshot.png)
+![screenshot](screenshots/Cellphone-version.png)
+![screenshot](screenshots/Tablet-version.png)
+![screenshot](screenshots/Desktop-version.png)
 
 This week's project technical skills are:
 * Ability to create UIs adaptable to different screen sizes using mediaqueries
