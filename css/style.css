@@ -90,6 +90,10 @@ header a {
   cursor: pointer;
 }
 
+article a img {
+  height: 75px;
+}
+
 .tnw-menu img {
   width: 66px;
   height: 16px;
@@ -104,13 +108,36 @@ header a {
   display: none;
 }
 
+.fa-bars {
+  width: 100%;
+  height: 100%;
+  color: #f42;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
 .nav-menu2-right .fa-bars:hover {
   cursor: pointer;
+}
+
+.fa-search {
+  transform: scaleX(-1);
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid rgba(110, 110, 110, 0.5);
+  padding: 1em;
 }
 
 .nav-menu2-right .fa-search:hover {
   cursor: pointer;
   color: black;
+}
+
+main li a {
+  font-family: "Liberation Sans", arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #555;
+  text-decoration: none;
 }
 
 .nav-menu1 a {
@@ -129,10 +156,56 @@ header a {
   justify-content: space-between;
 }
 
+main ul {
+  padding: 1em;
+}
+
 .nav-menu1-left ul,
 .nav-menu1-right ul,
 .nav-menu2-left ul {
   display: flex;
+}
+
+.highlight a,
+.highlight .author {
+  text-decoration: none;
+  font-family: "Liberation Sans", sans-serif;
+  color: #6e6e6e;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.5em;
+  padding-left: 0;
+}
+
+.flex-item2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.lastest-funding-right a {
+  text-decoration: none;
+  font-family: "ARS Marquette", sans-serif;
+  font-size: 0.85rem;
+  color: #f42;
+}
+
+.funding-content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.latest-deals-top a {
+  text-decoration: none;
+  color: #f42;
+}
+
+.most-popular p a {
+  text-decoration: none;
+  color: #9e9e9e;
+}
+
+main li a:hover {
+  color: black;
 }
 
 .nav-menu1 a:hover {
@@ -158,22 +231,6 @@ header a {
   align-items: center;
   color: #6e6e6e;
   padding-left: 1em;
-}
-
-.fa-search {
-  transform: scaleX(-1);
-  width: 100%;
-  height: 100%;
-  border-right: 1px solid rgba(110, 110, 110, 0.5);
-  padding: 1em;
-}
-
-.fa-bars {
-  width: 100%;
-  height: 100%;
-  color: #ff4422;
-  padding-left: 1em;
-  padding-top: 1em;
 }
 
 .yellow-p {
@@ -231,19 +288,9 @@ header a {
   letter-spacing: -0.05rem;
 }
 
-.highlight a,
-.highlight .author {
-  text-decoration: none;
-  font-family: "Liberation Sans", sans-serif;
-  color: #6e6e6e;
-  font-size: 0.75rem;
-  font-weight: bold;
-  padding: 0.5em;
-  padding-left: 0;
-}
-
 .highlight1 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -260,7 +307,8 @@ header a {
 }
 
 .highlight2 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -272,7 +320,8 @@ header a {
 }
 
 .highlight3 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -298,10 +347,6 @@ article {
   display: flex;
 }
 
-article a img {
-  height: 75px;
-}
-
 .flex-item1 {
   margin: 1em;
   width: 100px;
@@ -315,11 +360,6 @@ article a img {
   padding-left: 0;
 }
 
-.flex-item2 a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .flex-item2 h3 {
   font-size: 1em;
 }
@@ -328,6 +368,14 @@ article a img {
   color: #6e6e6e;
   font-size: 0.75em;
   margin-top: 1em;
+}
+
+.lastest-funding-right a:hover {
+  color: black;
+}
+
+.latest-deals-top a:hover {
+  color: black;
 }
 
 .flex-item2 h3 a:hover {
@@ -410,29 +458,38 @@ section.lastest-funding {
   color: black;
 }
 
+main li {
+  list-style: disc;
+  font-size: 0.85em;
+  padding: 1em;
+  color: #f42;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.4);
+}
+
 .lastest-funding-right li {
   list-style: none;
   padding: 0.4em 1em;
-}
-
-.lastest-funding-right a {
-  text-decoration: none;
-  font-family: "ARS Marquette", sans-serif;
-  font-size: 0.85rem;
-  color: #f42;
 }
 
 .separator {
   display: none;
 }
 
-.lastest-funding-right a:hover {
-  color: black;
-}
-
 div.funding {
   position: relative;
   margin: 1em;
+}
+
+.latest img {
+  width: 96px;
+  height: 96px;
+  float: right;
+  object-fit: cover;
+  object-position: center;
+}
+
+.lower-footer img {
+  height: 9px;
 }
 
 div.funding img {
@@ -492,6 +549,33 @@ div.funding img {
   cursor: pointer;
 }
 
+.funding-content p {
+  color: #6e6e6e;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.most-popular p {
+  font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
+  color: #9e9e9e;
+  font-size: 0.65rem;
+}
+
+.latest-deals-offer p {
+  font-size: 0.75rem;
+  color: #6e6e6e;
+}
+
+.lower-footer p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.latest-deals-offer div p {
+  display: none;
+}
+
 .funding-icons p:hover {
   color: black;
   cursor: pointer;
@@ -499,17 +583,6 @@ div.funding img {
 
 .funding-content {
   padding: 1.2em;
-}
-
-.funding-content p {
-  color: #6e6e6e;
-  font-size: 0.8rem;
-  cursor: pointer;
-}
-
-.funding-content a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .funding-content span {
@@ -525,12 +598,14 @@ main {
   margin-top: 3em;
 }
 
-main h2 {
-  color: #f42;
-  font-family: Avalon, sans-serif;
+.latest-deals-offer span {
+  text-decoration: line-through;
+  font-size: 0.65rem;
+}
+
+.lower-footer span span {
   font-weight: bold;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  color: white;
 }
 
 main h2 span:hover {
@@ -567,20 +642,13 @@ main article {
   padding-bottom: 0.2em;
 }
 
+.latest-deals-offer h3 {
+  font-size: 0.85rem;
+}
+
 .most-popular h3:hover {
   text-decoration: underline;
   cursor: pointer;
-}
-
-.most-popular p {
-  font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
-  color: #9e9e9e;
-  font-size: 0.65rem;
-}
-
-.most-popular p a {
-  text-decoration: none;
-  color: #9e9e9e;
 }
 
 .most-popular p a:hover {
@@ -595,7 +663,8 @@ main article {
 }
 
 .most-popular1 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -607,7 +676,8 @@ main article {
 }
 
 .most-popular2 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -619,7 +689,8 @@ main article {
 }
 
 .most-popular3 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -631,7 +702,8 @@ main article {
 }
 
 .most-popular4 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -643,7 +715,8 @@ main article {
 }
 
 .most-popular5 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -655,7 +728,8 @@ main article {
 }
 
 .most-popular6 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -667,7 +741,8 @@ main article {
 }
 
 .most-popular7 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -679,7 +754,8 @@ main article {
 }
 
 .most-popular8 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -691,7 +767,8 @@ main article {
 }
 
 .most-popular9 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -706,14 +783,6 @@ main article {
   background-color: rgba(255, 68, 34, 0.08);
   color: #f42;
   margin-top: 1px;
-}
-
-.latest img {
-  width: 96px;
-  height: 96px;
-  float: right;
-  object-fit: cover;
-  object-position: center;
 }
 
 .latest .tag {
@@ -732,29 +801,6 @@ main article {
 .latest h4:hover {
   cursor: pointer;
   text-decoration: underline;
-}
-
-main ul {
-  padding: 1em;
-}
-
-main li {
-  list-style: disc;
-  font-size: 0.85em;
-  padding: 1em;
-  color: #f42;
-  border-bottom: 1px solid rgba(158, 158, 158, 0.4);
-}
-
-main li a {
-  font-family: "Liberation Sans";
-  font-size: 1em;
-  color: #555;
-  text-decoration: none;
-}
-
-main li a:hover {
-  color: black;
 }
 
 .latest-deals {
@@ -780,18 +826,10 @@ main li a:hover {
   cursor: pointer;
 }
 
-.latest-deals-top a {
-  text-decoration: none;
-  color: #f42;
-}
-
-.latest-deals-top a:hover {
-  color: black;
-}
-
 .latest-deals-offer {
   clear: left;
   margin-bottom: 3.25em;
+  font-family: "Liberation Sans", arial, Helvetica, sans-serif;
 }
 
 .latest-deals-offer div {
@@ -801,12 +839,16 @@ main li a:hover {
   margin-right: 1em;
 }
 
-.latest-deals-offer div:hover {
-  cursor: pointer;
+.media-icons div {
+  text-align: center;
+  border-radius: 50%;
+  margin: 2em 0.25em;
+  background-color: #333;
+  color: white;
 }
 
-.latest-deals-offer div p {
-  display: none;
+.latest-deals-offer div:hover {
+  cursor: pointer;
 }
 
 .offer-image1 {
@@ -865,28 +907,10 @@ main li a:hover {
   background-position: center;
 }
 
-.latest-deals-offer {
-  font-family: "Liberation Sans";
-}
-
-.latest-deals-offer h3 {
-  font-size: 0.85rem;
-}
-
 .latest-deals-offer h3:hover {
   color: #f42;
   text-decoration: underline;
   cursor: pointer;
-}
-
-.latest-deals-offer p {
-  font-size: 0.75rem;
-  color: #6e6e6e;
-}
-
-.latest-deals-offer span {
-  text-decoration: line-through;
-  font-size: 0.65rem;
 }
 
 footer {
@@ -905,17 +929,9 @@ footer {
   margin: 0 auto;
 }
 
-.media-icons div {
-  text-align: center;
-  border-radius: 50%;
-  margin: 2em 0.25em;
-  background-color: #333;
-  color: white;
-}
-
 .media-icons div:hover {
   background-color: black;
-  border: 1pix solid white;
+  border: 1px solid white;
   cursor: pointer;
 }
 
@@ -949,10 +965,13 @@ footer {
 
 .lower-footer {
   background-color: black;
+  font-family: "Liberation Sans", arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  padding: 2.5em;
 }
 
 .footer-nav {
-  font-family: Shentox;
+  font-family: Shentox, arial, Helvetica, sans-serif;
   font-size: 0.65rem;
 }
 
@@ -966,30 +985,9 @@ footer {
   cursor: pointer;
 }
 
-.lower-footer {
-  font-family: "Liberation Sans";
-  font-size: 0.75rem;
-  padding: 2.5em;
-}
-
-.lower-footer img {
-  height: 9px;
-}
-
 .lower-footer img:hover,
 .lower-footer span span:hover {
   cursor: pointer;
-}
-
-.lower-footer p {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.lower-footer span span {
-  font-weight: bold;
-  color: white;
 }
 
 .bars {
@@ -1039,14 +1037,13 @@ footer {
   }
 
   .nav-menu2-left {
-    font-family: Shentox;
+    font-family: Shentox, arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 0.75rem;
   }
 
   .nav-menu2 {
     padding-right: 0;
-    position: -webkit-sticky;
     width: calc(100% - 106px);
     margin-left: 106px;
     padding-left: 0;
@@ -1054,6 +1051,11 @@ footer {
     position: sticky;
     top: 0;
     z-index: 2;
+  }
+
+  main li {
+    font-size: 0.75em;
+    padding: 0.5em;
   }
 
   .nav-menu2-left li {
@@ -1098,6 +1100,14 @@ footer {
     line-height: 1.1em;
   }
 
+  main h2 {
+    color: #f42;
+    font-family: Avalon, sans-serif;
+    font-weight: bold;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
   .highlight h2 {
     font-size: 1.2rem;
   }
@@ -1107,15 +1117,17 @@ footer {
     flex-wrap: wrap;
   }
 
-  .latest-news-flex-container article {
-    display: flex;
-    flex-direction: column;
+  main article {
+    width: 45%;
   }
 
   .latest-news-flex-container article {
-    width: 31.5%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
     margin: 0.5em;
   }
+
   .latest-news-flex-container .flex-item1 {
     width: 100%;
     height: 113px;
@@ -1162,10 +1174,6 @@ footer {
     width: 33%;
   }
 
-  .lastest-funding-botton {
-    width: 100%;
-  }
-
   .redish,
   .pink {
     width: auto;
@@ -1198,21 +1206,12 @@ footer {
     flex-wrap: wrap;
   }
 
-  main article {
-    width: 45%;
-  }
-
   .most-popular {
     height: 310px;
   }
 
   .latest h4 {
     font-size: 0.85rem;
-  }
-
-  main li {
-    font-size: 0.75em;
-    padding: 0.5em;
   }
 
   .latest-deals-bottom {
@@ -1279,10 +1278,6 @@ footer {
     padding-left: 1em;
   }
 
-  .highlight1 {
-    position: relative;
-  }
-
   .highlight1 img,
   .highlight-date {
     display: block;
@@ -1302,11 +1297,17 @@ footer {
   }
 
   .highlight1 {
-    background: linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    background:
+      linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 1)),
       url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Opal-796x417.jpg)
         no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+  }
+
+  main article {
+    width: 30%;
   }
 
   .latest-news-flex-container article {
@@ -1319,8 +1320,6 @@ footer {
     line-height: 1rem;
   }
 
-  
-
   .lastest-funding-top {
     display: flex;
     justify-content: space-between;
@@ -1332,15 +1331,11 @@ footer {
     display: block;
   }
 
-   main article {
-    width: 30%;
-  }
-
   .most-popular {
     height: 230px;
   }
 
-   .latest-deals-bottom {
+  .latest-deals-bottom {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
@@ -1349,5 +1344,4 @@ footer {
     width: 22vw;
     height: calc(22vw / 1.85);
   }
-
 }
