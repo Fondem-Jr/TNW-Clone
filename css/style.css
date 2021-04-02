@@ -50,7 +50,7 @@
 }
 
 .pure-link,
-main h2 .pure-link {
+h2 .pure-link {
   display: inline;
   text-decoration: inherit;
   font-family: inherit;
@@ -922,6 +922,7 @@ main article {
   padding-bottom: 0.5em;
 }
 
+.latest-news h2:hover,
 .latest-deals-top h2:hover {
   color: black;
   cursor: pointer;
