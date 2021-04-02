@@ -92,7 +92,6 @@ main h2 .pure-link {
   margin: 0;
 }
 
-.latest-deals-offer .offer-image .pure-link,
 .media-icons div .pure-link {
   display: block;
   width: 100%;
@@ -101,12 +100,7 @@ main h2 .pure-link {
   z-index: 2;
   bottom: 0;
   right: 0;
-}
-
-.media-icons div .pure-link {
   border-radius: 50%;
-  bottom: 0;
-  right: 0;
 }
 
 .lower-footer span span .pure-link {
@@ -117,6 +111,16 @@ main h2 .pure-link {
   color: inherit;
   padding: 0;
   margin: 0;
+}
+
+.latest-deals-offer .offer-image .pure-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
 }
 
 .highlight .clickme .pure-link {
@@ -361,6 +365,15 @@ main li a:hover {
   cursor: pointer;
 }
 
+main article h2 {
+  color: #f42;
+  padding-left: 0.5em;
+  font-family: Avalon, sans-serif;
+  letter-spacing: -0.05rem;
+  margin-bottom: 0.5em;
+  margin-left: -0.5em;
+}
+
 .highlight h1,
 .highlight h2 {
   font-size: 1em;
@@ -369,7 +382,8 @@ main li a:hover {
 }
 
 .highlight1 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -386,7 +400,8 @@ main li a:hover {
 }
 
 .highlight2 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -398,7 +413,8 @@ main li a:hover {
 }
 
 .highlight3 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -413,16 +429,11 @@ main li a:hover {
   margin-top: 10em;
 }
 
-main article h2,
 .latest-news h2 {
   color: #f42;
   padding-left: 0.5em;
   font-family: Avalon, sans-serif;
   letter-spacing: -0.05rem;
-}
-
-main article h2 {
-  margin-bottom: 0.5em;
 }
 
 article {
@@ -701,10 +712,6 @@ main h2 span:hover {
   cursor: pointer;
 }
 
-main h2 {
-  margin-left: -0.5em;
-}
-
 main article {
   display: flex;
   flex-direction: column;
@@ -757,7 +764,8 @@ main article {
 }
 
 .most-popular1 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -769,7 +777,8 @@ main article {
 }
 
 .most-popular2 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -781,7 +790,8 @@ main article {
 }
 
 .most-popular3 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -793,7 +803,8 @@ main article {
 }
 
 .most-popular4 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -805,7 +816,8 @@ main article {
 }
 
 .most-popular5 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -817,7 +829,8 @@ main article {
 }
 
 .most-popular6 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -829,7 +842,8 @@ main article {
 }
 
 .most-popular7 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -841,7 +855,8 @@ main article {
 }
 
 .most-popular8 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -853,7 +868,8 @@ main article {
 }
 
 .most-popular9 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -1387,7 +1403,8 @@ footer {
   }
 
   .highlight1 {
-    background: linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    background:
+      linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 1)),
       url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Opal-796x417.jpg)
         no-repeat;
     background-size: cover;
@@ -1436,7 +1453,6 @@ footer {
 
   .latest-deals-offer .offer-image {
     width: 95%;
-    /* height: calc(20vw / 1.85); */
   }
 
   .triangle-yellow {
