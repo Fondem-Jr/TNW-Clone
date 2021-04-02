@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "DejaVu Sans";
+  src: url("../fonts/DejaVuSans.ttf");
+}
+
+@font-face {
+  font-family: Shentox;
+  src: url("../fonts/Shentox.ttf");
+}
+
+@font-face {
+  font-family: Shentox;
+  src: url("../fonts/Shentox\ Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Shentox;
+  src: url("../fonts/Shentox\ SemiBold.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Liberation Sans";
+  src: url("../fonts/LiberationSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: Avalon;
+  src: url("../fonts/Avalon_Regular.ttf");
+}
+
+@font-face {
+  font-family: Avalon;
+  src: url("../fonts/Avalon_Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ARS Marquette";
+  src: url("../fonts/ARSMaquettePro-Regular.ttf");
+}
+
+$liberation: "Liberation Sans", arial, Helvetica, sans-serif;
+$avalon: Avalon, Arial, Helvetica, sans-serif;
