@@ -49,6 +49,86 @@
   font-family: Avalon, Arial, Helvetica, sans-serif;
 }
 
+.pure-link,
+main h2 .pure-link {
+  display: inline;
+  text-decoration: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-item1 .pure-link,
+.pink .pure-link,
+.redish .pure-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+}
+
+.flex-item1 .pure-link {
+  position: relative;
+}
+
+.most-popular-title .pure-link,
+.highlight h1 .pure-link,
+.highlight h2 .pure-link,
+.latest-deals-offer h3 .pure-link,
+.footer-nav li .pure-link,
+.funding-icons p,
+.latest h4 .pure-link {
+  display: inline;
+  text-decoration: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.latest-deals-offer div .pure-link,
+.media-icons div .pure-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+}
+
+.media-icons div .pure-link {
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.lower-footer span span .pure-link {
+  display: inline;
+  text-decoration: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.highlight .clickme .pure-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+}
+
 .latest-news,
 .latest-funding,
 main,
@@ -276,44 +356,6 @@ main li a:hover {
   height: 70%;
 }
 
-.highlight h1 .pure-link,
-.highlight h2 .pure-link,
-.latest-deals-offer h3 .pure-link,
-.footer-nav li .pure-link,
-.lower-footer span span .pure-link,
-.funding-icons p .pure-link,
-.latest h4 .pure-link,
-.most-popular-title .pure-link,
-main h2 .pure-link {
-  display: inline;
-  text-decoration: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  padding: 0;
-  margin: 0;
-}
-
-.highlight .clickme .pure-link,
-.flex-item1 .pure-link,
-.latest-deals-offer div .pure-link,
-.media-icons div .pure-link,
-.redish .pure-link,
-.pink .pure-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-  bottom: 0;
-  right: 0;
-}
-
-.highlight .clickme .pure-link,
-.flex-item1 .pure-link {
-  position: relative;
-}
-
 .highlight h1,
 .highlight .clickme:hover {
   cursor: pointer;
@@ -327,7 +369,8 @@ main h2 .pure-link {
 }
 
 .highlight1 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -344,7 +387,8 @@ main h2 .pure-link {
 }
 
 .highlight2 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -356,7 +400,8 @@ main h2 .pure-link {
 }
 
 .highlight3 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -569,6 +614,8 @@ div.funding img {
 }
 
 .funding-icons {
+  display: flex;
+  flex-direction: column;
   height: 5.5em;
   padding: 0.75em 1em;
   border-bottom: 1px solid rgba(255, 68, 34, 0.4);
@@ -581,6 +628,7 @@ div.funding img {
 
 .funding-icons p {
   color: #6e6e6e;
+  font-size: 0.8rem;
 }
 
 .funding-icons:hover {
@@ -702,7 +750,8 @@ main article {
 }
 
 .most-popular1 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -714,7 +763,8 @@ main article {
 }
 
 .most-popular2 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -726,7 +776,8 @@ main article {
 }
 
 .most-popular3 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -738,7 +789,8 @@ main article {
 }
 
 .most-popular4 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -750,7 +802,8 @@ main article {
 }
 
 .most-popular5 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -762,7 +815,8 @@ main article {
 }
 
 .most-popular6 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -774,7 +828,8 @@ main article {
 }
 
 .most-popular7 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -786,7 +841,8 @@ main article {
 }
 
 .most-popular8 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -798,7 +854,8 @@ main article {
 }
 
 .most-popular9 {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -877,12 +934,6 @@ main article {
   margin: 2em 0.25em;
   background-color: #333;
   color: white;
-}
-
-.media-icons div .pure-link {
-  border-radius: 50%;
-  bottom: 0;
-  right: 0;
 }
 
 .latest-deals-offer div:hover {
@@ -1185,6 +1236,8 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
   }
 
   .latest-funding-right li {
@@ -1334,7 +1387,8 @@ footer {
   }
 
   .highlight1 {
-    background: linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    background:
+      linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 1)),
       url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Opal-796x417.jpg)
         no-repeat;
     background-size: cover;
@@ -1354,6 +1408,11 @@ footer {
   .flex-item2 h3 {
     font-size: 1rem;
     line-height: 1rem;
+  }
+
+  .latest-funding-right ul {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .latest-funding-top {
