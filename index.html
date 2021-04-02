@@ -8,8 +8,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./styles/sass_style.css" />
+    <link rel="stylesheet" href="./styles/all.css" />
     <title>Clone | TNW</title>
   </head>
 
@@ -18,10 +18,11 @@
       <div class="menus">
         <nav class="nav-menu1">
           <div class="tnw-menu">
-            <img
-              src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
-              alt=""
-            />
+            <a href="#">
+              <img
+                src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
+                alt="man throwing himself against a window"
+            /></a>
           </div>
           <div class="menu1-left-right">
             <div class="nav-menu1-left">
@@ -58,20 +59,28 @@
             </ul>
           </div>
           <div class="nav-menu2-right">
-            <i class="fa fa-search"> </i>
-            <div class="bars">
-              <i class="icon fa fa-bars"></i>
-            </div>
+            <a href="#" class="div-link">
+              <div class="magnifying">
+                <i class="fa fa-search"> </i>
+              </div>
+            </a>
+            <a href="#" class="div-link">
+              <div class="bars">
+                <i class="icon fa fa-bars"> </i>
+              </div>
+            </a>
           </div>
         </nav>
       </div>
 
-      <div>
-        <p class="yellow-p">
-          Calling young digital talent in the Netherlands - Be recognized in the
-          T500 <i class="fas fa-long-arrow-alt-right"></i>
-        </p>
-      </div>
+      <a href="#" class="div-link">
+        <div>
+          <p class="yellow-p">
+            Calling young digital talent in the Netherlands - Be recognized in
+            the T500 <i class="fas fa-long-arrow-alt-right"></i>
+          </p>
+        </div>
+      </a>
     </header>
 
     <section class="highlights">
@@ -89,12 +98,11 @@
         />
         <p class="highlight-date">Tuesday — January 26, 2021</p>
         <p class="author">
-          <a href="#"> by Ivan Mehta </a>
-          <i class="far fa-clock"> </i> 1 hour ago
-          <i class="fas fa-share-alt"> </i> 6
+          by <a href="#"> Ivan Mehta </a> <i class="far fa-clock"> </i> 1 hour
+          ago <i class="fas fa-share-alt"> </i> 6
         </p>
         <div class="clickme">
-          <a class="pure-link" href="#"></a>
+          <a class="pure-link div-link" href="#"></a>
         </div>
       </div>
       <div class="highlight highlight2">
@@ -104,12 +112,11 @@
           </a>
         </h2>
         <p class="author">
-          <a href="#"> by Thomas Macaulay </a>
-          <i class="far fa-clock"> </i> 2 hours ago
-          <i class="fas fa-share-alt"> </i> 4
+          by <a href="#"> Thomas Macaulay </a> <i class="far fa-clock"> </i> 2
+          hours ago <i class="fas fa-share-alt"> </i> 4
         </p>
         <div class="clickme">
-          <a class="pure-link" href="#"></a>
+          <a class="pure-link div-link" href="#"></a>
         </div>
       </div>
       <div class="highlight highlight3">
@@ -119,19 +126,22 @@
           >
         </h2>
         <p class="author">
-          <a href="#"> by Ivan Mehta </a>
-          <i class="far fa-clock"> </i> 2 hours ago
-          <i class="fas fa-share-alt"> </i> 5
+          by <a href="#"> Ivan Mehta </a> <i class="far fa-clock"> </i> 2 hours
+          ago <i class="fas fa-share-alt"> </i> 5
         </p>
 
         <div class="clickme">
-          <a class="pure-link" href="#"></a>
+          <a class="pure-link div-link" href="#"></a>
         </div>
       </div>
     </section>
 
     <section class="latest-news">
-      <h2><a href="#" class="pure-link">Latest News <i class="fas fa-chevron-right"></i></a></h2>
+      <h2>
+        <a href="#" class="pure-link"
+          >Latest News <i class="fas fa-chevron-right"></i
+        ></a>
+      </h2>
       <div class="latest-news-flex-container">
         <article>
           <div class="flex-item1 latest-news-img1">
@@ -253,8 +263,11 @@
     <section class="latest-funding">
       <div class="latest-funding-top">
         <div class="latest-funding-left">
-          <h2><a href="#" class="pure-link">Latest funding rounds on Index.co <i class="fas fa-chevron-right"></i></a>
-            
+          <h2>
+            <a href="#" class="pure-link"
+              >Latest funding rounds on Index.co
+              <i class="fas fa-chevron-right"></i
+            ></a>
           </h2>
         </div>
         <nav class="latest-funding-right">
@@ -959,7 +972,11 @@
 
     <section class="latest-deals">
       <div class="latest-deals-top">
-        <h2><a href="#" class="pure-link">Latest Deals <i class="fas fa-chevron-right"></i></a></h2>
+        <h2>
+          <a href="#" class="pure-link"
+            >Latest Deals <i class="fas fa-chevron-right"></i
+          ></a>
+        </h2>
         <ul>
           <li><a href="#">See all Deals</a></li>
         </ul>

@@ -1,0 +1,165 @@
+@import "./fonts";
+
+$gray_1: #c8c8c8;
+$gray_2: #808080;
+$orange_1: #f42;
+$yellow_1: #fc0;
+
+$highlight-padding: 0.75em;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  display: inline;
+  text-decoration: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a.div-link {
+  display: block;
+  height: 100%;
+}
+
+.center-content-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background-color: white;
+  .menus {
+    display: flex;
+    justify-content: space-between;
+    .nav-menu1 {
+      .tnw-menu {
+        width: 106px;
+        height: 48px;
+        background-color: black;
+        &:hover {
+          background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif");
+        }
+        a {
+          @extend .center-content-flex;
+          img {
+            width: 66px;
+            height: 16px;
+          }
+        }
+      }
+      .menu1-left-right {
+        display: none;
+      }
+    }
+    .nav-menu2 {
+      .nav-menu2-left {
+        display: none;
+      }
+      .nav-menu2-right {
+        display: flex;
+        height: 100%;
+        div {
+          @extend .center-content-flex;
+          height: 100%;
+          width: 48px;
+          border-left: 1px solid $gray_1;
+          .fa-search {
+            transform: scalex(-1);
+          }
+        }
+        .magnifying {
+          color: $gray_1;
+          &:hover {
+            color: $gray_2;
+          }
+        }
+        .bars {
+          color: $orange_1;
+        }
+      }
+    }
+  }
+  > a.div-link {
+    width: 100%;
+    div {
+      height: 76px;
+      background-color: $yellow_1;
+      font-family: $liberation;
+      font-size: 0.75rem;
+      @extend .center-content-flex;
+    }
+  }
+}
+
+section.highlights {
+  padding-top: calc((48px + 76px) + 1em);
+  .highlight1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 1)),
+      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Opal-796x417.jpg)
+        no-repeat;
+    img,
+    p.highlight-date {
+      display: none;
+    }
+  }
+  .highlight2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 1)),
+      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Untitled-design-2021-01-26T112752.972-796x417.png)
+        no-repeat;
+  }
+  .highlight3 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 1)),
+      url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Gemini2-duplicates-monitor-alert-e1611566958933-796x420.png)
+        no-repeat;
+  }
+
+  .highlight {
+    position: relative;
+    margin: 0.5em;
+    padding: $highlight-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+
+    h1,
+    h2 {
+      font-family: $avalon;
+      font-size: 1.15rem;
+      font-weight: bold;
+      margin-bottom: 0.25em;
+      color: white;
+    }
+    .author {
+      font-family: $liberation;
+      font-size: 0.75rem;
+      color: $gray_1;
+      a:hover {
+        color: white;
+      }
+    }
+    .clickme {
+      position: absolute;
+      width: 100%;
+      height: calc(60% + (2 * #{$highlight-padding}));
+      top: 0;
+      left: 0;
+    }
+  }
+}
