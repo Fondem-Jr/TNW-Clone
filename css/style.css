@@ -92,7 +92,7 @@ main h2 .pure-link {
   margin: 0;
 }
 
-.latest-deals-offer div .pure-link,
+.latest-deals-offer .offer-image .pure-link,
 .media-icons div .pure-link {
   display: block;
   width: 100%;
@@ -369,8 +369,7 @@ main li a:hover {
 }
 
 .highlight1 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -387,8 +386,7 @@ main li a:hover {
 }
 
 .highlight2 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -400,8 +398,7 @@ main li a:hover {
 }
 
 .highlight3 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -416,11 +413,16 @@ main li a:hover {
   margin-top: 10em;
 }
 
+main article h2,
 .latest-news h2 {
   color: #f42;
   padding-left: 0.5em;
   font-family: Avalon, sans-serif;
   letter-spacing: -0.05rem;
+}
+
+main article h2 {
+  margin-bottom: 0.5em;
 }
 
 article {
@@ -658,7 +660,7 @@ div.funding img {
   align-items: center;
 }
 
-.latest-deals-offer div p {
+.latest-deals-offer .offer-image p {
   display: none;
 }
 
@@ -699,6 +701,10 @@ main h2 span:hover {
   cursor: pointer;
 }
 
+main h2 {
+  margin-left: -0.5em;
+}
+
 main article {
   display: flex;
   flex-direction: column;
@@ -730,7 +736,8 @@ main article {
 
 .latest-deals-offer h3 {
   font-size: 0.85rem;
-  display: inline;
+  display: inline-block;
+  width: 95%;
 }
 
 .most-popular h3:hover {
@@ -750,8 +757,7 @@ main article {
 }
 
 .most-popular1 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -763,8 +769,7 @@ main article {
 }
 
 .most-popular2 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -776,8 +781,7 @@ main article {
 }
 
 .most-popular3 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -789,8 +793,7 @@ main article {
 }
 
 .most-popular4 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -802,8 +805,7 @@ main article {
 }
 
 .most-popular5 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -815,8 +817,7 @@ main article {
 }
 
 .most-popular6 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -828,8 +829,7 @@ main article {
 }
 
 .most-popular7 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -841,8 +841,7 @@ main article {
 }
 
 .most-popular8 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -854,8 +853,7 @@ main article {
 }
 
 .most-popular9 {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 1)
@@ -914,17 +912,19 @@ main article {
 }
 
 .latest-deals-offer {
-  clear: left;
-  margin-bottom: 3.25em;
+  margin-bottom: 1em;
   font-family: "Liberation Sans", arial, Helvetica, sans-serif;
+  display: flex;
 }
 
-.latest-deals-offer div {
-  position: relative;
+.latest-deals-offer .offer-image {
   width: 75px;
   height: 75px;
-  float: left;
   margin-right: 1em;
+}
+
+.latest-deals-offer .latest-deals-offer-caption {
+  flex-grow: 10;
 }
 
 .media-icons div {
@@ -936,7 +936,7 @@ main article {
   color: white;
 }
 
-.latest-deals-offer div:hover {
+.latest-deals-offer .offer-image:hover {
   cursor: pointer;
 }
 
@@ -1193,7 +1193,6 @@ footer {
     font-family: Avalon, sans-serif;
     font-weight: bold;
     padding-top: 0.5em;
-    padding-bottom: 0.5em;
   }
 
   .highlight h2 {
@@ -1312,6 +1311,7 @@ footer {
 
   .latest-deals-offer {
     position: relative;
+    flex-direction: column;
   }
 
   .triangle-yellow {
@@ -1322,7 +1322,7 @@ footer {
     position: relative;
   }
 
-  .latest-deals-offer div p {
+  .latest-deals-offer .offer-image p {
     display: block;
   }
 
@@ -1337,7 +1337,7 @@ footer {
     font-size: calc(1vw * 0.01);
   }
 
-  .latest-deals-offer div {
+  .latest-deals-offer .offer-image {
     width: 30vw;
     height: calc(30vw / 1.85);
     clear: left;
@@ -1387,8 +1387,7 @@ footer {
   }
 
   .highlight1 {
-    background:
-      linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 1)),
       url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/01/Opal-796x417.jpg)
         no-repeat;
     background-size: cover;
@@ -1435,8 +1434,16 @@ footer {
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .latest-deals-offer div {
-    width: 22vw;
-    height: calc(22vw / 1.85);
+  .latest-deals-offer .offer-image {
+    width: 95%;
+    /* height: calc(20vw / 1.85); */
+  }
+
+  .triangle-yellow {
+    width: 100%;
+    height: 100%;
+    background-color: #fc0;
+    clip-path: polygon(65% 0%, 100% 45%, 100% 0);
+    position: relative;
   }
 }
